@@ -24,7 +24,7 @@ This portfolio is designed to showcase development skills in a dynamic and inter
 
 ## 🎓 Learning Experience
 
-This project served as both a **learning exercise** and a **portfolio piece**. The tutorial from [JavaScript Mastery](https://youtu.be/0fYi8SGA20k?si=WruTCsZAxjo9XW6u) provided in-depth guidance on working with Three.js, and helped solidify knowledge of modern web development tools.
+This project served as both a **learning exercise** and a **portfolio piece**. [JavaScript Mastery](https://youtu.be/0fYi8SGA20k?si=WruTCsZAxjo9XW6u) provided in-depth guidance on working with Three.js, and helped solidify knowledge of modern web development tools.
 
 ## 🧩 3D Assets
 
