@@ -1,6 +1,6 @@
 # 🌐 3D Developer Portfolio
 
-A visually engaging 3D developer portfolio built using **Three.js**. This project was created by following a tutorial from [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery), with custom 3D models sourced from [Sketchfab](https://sketchfab.com/).
+A visually engaging 3D developer portfolio built using **Three.js**. Abig thanks to [JavaScript Mastery](https://www.youtube.com/c/JavaScriptMastery) for such amazing tutorials on 3Js,. It helped me a lot in my project. Custom 3D models sourced from [Sketchfab](https://sketchfab.com/).
 
 ## 📽️ Overview
 
