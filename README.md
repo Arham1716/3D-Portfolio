@@ -12,7 +12,7 @@ This portfolio is designed to showcase development skills in a dynamic and inter
 - **React** – Frontend framework (used in the tutorial)
 - **Vite** – Development server and build tool
 - **Framer Motion** – For smooth animations
-- **Tailwind CSS** – Styling (if used in the tutorial)
+- **Tailwind CSS** – Styling 
 
 ## 📁 Features
 
