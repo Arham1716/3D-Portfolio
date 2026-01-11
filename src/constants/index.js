@@ -5,10 +5,10 @@ import {
     web,
     javascript,
     typescript,
-    html,
-    css,
+    //html,
+    //css,
     reactjs,
-    redux,
+    //redux,
     tailwind,
     nodejs,
     mongodb,
@@ -19,9 +19,13 @@ import {
     settleupsite,
     tripguide,
     threejs,
-    meta,
-    shopify,
+    //meta,
+    //shopify,
     techclanlogo,
+    webflow,
+    nestjs,
+    nextjs,
+    postgresql
   } from "../assets";
 
   export const navLinks = [
@@ -60,12 +64,12 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Next.Js",
+      icon: nextjs,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "NestJs",
+      icon: nestjs,
     },
     {
       name: "JavaScript",
@@ -80,8 +84,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Weblow",
+      icon: webflow,
     },
     {
       name: "Tailwind CSS",
@@ -96,16 +100,16 @@ import {
       icon: mongodb,
     },
     {
+      name: "Postgresql",
+      icon: postgresql,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
@@ -119,7 +123,7 @@ import {
       company_name: "TechClan",
       icon: techclanlogo,
       iconBg: "#383E56",
-      date: "Sep 2025 - Jan 2026",
+      date: "Mar 2025 - Present",
       points: [
         "At Upcover, implemented backend support for coupon and discount functionality within the payment system, ensuring accurate validation, pricing logic, and seamless integration with existing billing workflows.",
         "Assisted in integrating a new insurance provider by extending backend services, aligning data models, and ensuring compatibility with existing provider integrations and business rules.",
@@ -216,7 +220,7 @@ import {
     {
       name: "Settle Up",
       description:
-        "Settle Up – A full-stack expense management app designed for groups traveling or gathering together. Users can create groups, add members via Gmail invites, track shared expenses, and (with future AI integration) automatically calculate who owes whom, simplifying financial coordination and avoiding confusion.",
+        "Settle Up - A full-stack expense management app for groups traveling or gathering. Users can create groups, add members via Gmail invites, track shared expenses, and manage budgets to stay within daily, weekly, or monthly limits. An AI chatbot will assist users with app navigation and queries.",
       tags: [
         {
           name: "NestJs",
