@@ -47,11 +47,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        A DevOps Engineer who turns infrastructure chaos into clean,
+        automated, and observable systems. I build on AWS, orchestrate
+        with Kubernetes, and ship through CI/CD — focused on making 
+        deployments reliable and systems that don't wake you up at 3am. 
+        Currently engineering cloud solutions at Virtual Force, I bring
+        a bias for automation, a sharp eye for cost-performance tradeoffs,
+        and a habit of owning problems end to end.
+        Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

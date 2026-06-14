@@ -1,19 +1,21 @@
 import {
-    mobile,
-    backend,
+    //mobile,
+    //backend,
     creator,
     web,
-    javascript,
-    typescript,
+    devops,
+    cloud,
+    aws,
+    azure,
     //html,
     //css,
     reactjs,
     //redux,
-    tailwind,
+    linux,
     nodejs,
-    mongodb,
+    bash,
     git,
-    figma,
+    //figma,
     docker,
     showcallsite,
     settleupsite,
@@ -25,7 +27,8 @@ import {
     webflow,
     nestjs,
     nextjs,
-    postgresql
+    postgresql,
+    virtualforce
   } from "../assets";
 
   export const navLinks = [
@@ -49,12 +52,12 @@ import {
       icon: web,
     },
     {
-      title: "Modern Web Solutions",
-      icon: mobile,
+      title: "Cloud Engineer",
+      icon: cloud,
     },
     {
-      title: "Backend Engineer",
-      icon: backend,
+      title: "DevOps Engineer",
+      icon: devops,
     },
     {
       title: "Webflow Designer",
@@ -72,12 +75,12 @@ import {
       icon: nestjs,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "AWS",
+      icon: aws,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Azure",
+      icon: azure,
     },
     {
       name: "React JS",
@@ -88,16 +91,16 @@ import {
       icon: webflow,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Linux",
+      icon: linux,
     },
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Bash",
+      icon: bash,
     },
     {
       name: "Postgresql",
@@ -122,7 +125,7 @@ import {
       title: "Assosciate Software Engineer",
       company_name: "TechClan",
       icon: techclanlogo,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "Mar 2025 - Present",
       points: [
         "At Upcover, implemented backend support for coupon and discount functionality within the payment system, ensuring accurate validation, pricing logic, and seamless integration with existing billing workflows.",
@@ -131,20 +134,19 @@ import {
         "Revamped an outdated website into a refreshed, conversion-focused experience, improving visual clarity, content structure, and overall brand perception.",
       ],
     },
-    /*{
-      title: "Full Stack Developer",
-      company_name: "Settle Up",
-      icon: settleup,
+    {
+      title: "Devops Engineer",
+      company_name: "Virtual Force",
+      icon: virtualforce,
       iconBg: "#383E56",
-      date: "Dec 2025 - Present",
+      date: "Mar 2026 - Present",
       points: [
-        "At Upcover, implemented backend support for coupon and discount functionality within the payment system, ensuring accurate validation, pricing logic, and seamless integration with existing billing workflows.",
-        "assisted in integrating a new insurance provider by extending backend services, aligning data models, and ensuring compatibility with existing provider integrations and business rules.",
-        "Led the end-to-end development of Showcall’s new Webflow website, translating Figma designs into a modern, high-performance interface with custom interactions, CMS-driven content, and smooth scrolling.",
-        "Revamped an outdated website into a refreshed, conversion-focused experience, improving visual clarity, content structure, and overall brand perception.",
+        "AI Chatbot Deployments — Deployed and migrated AI chatbot workloads across AWS EC2, Lightsail, and vast.ai — evaluating each platform's cost, scalability, and hardware fit before committing. Every deployment is automated through CI/CD pipelines, with an active Lightsail-to-EC2 migration currently in progress.",
+        "AWS EKS Migration (Ameripolish) — Migrated a live floor-polishing SaaS product from EC2 to Elastic Kubernetes Service, handling cluster setup, node groups, IAM configuration, and production workload management on EKS from the ground up.",
+        "Grafana Monitoring Stack — Architected a centralized real-time monitoring solution for Virtual Force's entire server fleet using Grafana, Grafana Alloy, and Prometheus — giving the team live dashboards and proactive alerting across all infrastructure.",
       ],
     },
-    {
+    /*{
       title: "Web Developer",
       company_name: "Shopify",
       icon: shopify,
