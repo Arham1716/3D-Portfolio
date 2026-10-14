@@ -26,6 +26,7 @@ import webflow from "./tech/webflow.png";
 import nestjs from "./tech/nestjs.png";
 import nextjs from "./tech/nextjs.png";
 import postgresql from "./tech/postgresql.png";
+import googlecloud from "./tech/googlecloud.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -78,5 +79,6 @@ export {
   nestjs,
   nextjs,
   postgresql,
+  googlecloud,
   virtualforce
 };
