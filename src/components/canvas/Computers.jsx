@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Environment } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
@@ -9,28 +9,24 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={4} groundColor='black' />
+      {/* IBL — the key fix: HDR environment lighting penetrates dark PBR materials */}
+      <Environment preset='city' />
+      {/* Flat ambient so nothing is ever fully black */}
+      <ambientLight intensity={1.5} />
+      <hemisphereLight intensity={1.5} groundColor='#8888aa' />
+      {/* Key light upper-left */}
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={2}  // Increased from 1
+        intensity={3}
         castShadow
         shadow-mapSize={1024}
       />
-      <spotLight
-        position={[20, 30, -10]}  // Additional spotlight from different angle
-        angle={0.15}
-        penumbra={1}
-        intensity={1.5}
-        castShadow={false}
-      />
-      <pointLight intensity={3} />  // Increased from 2
-      <directionalLight 
-        position={[0, 20, 0]} 
-        intensity={1}
-        castShadow
-      />  // Added directional light from above
+      {/* Front fill — illuminates keyboard and base face-on */}
+      <directionalLight position={[0, 0, 8]} intensity={2} />
+      {/* Floor-level point aimed up at the desk mat */}
+      <pointLight position={[0, -2, 5]} intensity={3} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.6}  // Reduced from 0.7 and 0.75
@@ -67,7 +63,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
