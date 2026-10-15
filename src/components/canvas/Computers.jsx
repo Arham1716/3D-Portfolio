@@ -9,29 +9,28 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      {/* IBL — the key fix: HDR environment lighting penetrates dark PBR materials */}
-      <Environment preset='city' />
       {/* Flat ambient so nothing is ever fully black */}
-      <ambientLight intensity={1.5} />
-      <hemisphereLight intensity={1.5} groundColor='#8888aa' />
-      {/* Key light upper-left */}
+      <Environment preset='night' />
+      <ambientLight intensity={0.8} />
+      <hemisphereLight intensity={0.6} groundColor='#8888aa' />
+      {/* Key light — tight beam centred on the setup */}
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
+        position={[0, 10, 5]}
+        angle={0.2}
+        penumbra={0.2}
         intensity={3}
         castShadow
         shadow-mapSize={1024}
       />
-      {/* Front fill — illuminates keyboard and base face-on */}
-      <directionalLight position={[0, 0, 8]} intensity={2} />
-      {/* Floor-level point aimed up at the desk mat */}
-      <pointLight position={[0, -2, 5]} intensity={3} />
+      {/* Front fill */}
+      <directionalLight position={[0, 5, 8]} intensity={0.8} />
+      {/* Under-desk point */}
+      <pointLight position={[0, -1, 3]} intensity={1.5} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.6}  // Reduced from 0.7 and 0.75
         position={isMobile ? [0, -2, -2.2] : [0, -2.25, -1.5]}  // Moved up by 1 unit
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[-0.0, -0.2, -0.1]}
       />
     </mesh>
   );
