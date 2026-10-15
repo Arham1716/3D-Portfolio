@@ -28,6 +28,7 @@ import {
     nestjs,
     nextjs,
     postgresql,
+    googlecloud,
     virtualforce
   } from "../assets";
 
@@ -122,28 +123,27 @@ import {
   
   const experiences = [
     {
-      title: "Assosciate Software Engineer",
-      company_name: "TechClan",
-      icon: techclanlogo,
-      iconBg: "#E6DEDD",
-      date: "Mar 2025 - Present",
+      title: "DevOps Engineer",
+      company_name: "Virtual Force Inc",
+      icon: virtualforce,
+      iconBg: "#383E56",
+      date: "Feb 2026 - Present",
       points: [
-        "At Upcover, implemented backend support for coupon and discount functionality within the payment system, ensuring accurate validation, pricing logic, and seamless integration with existing billing workflows.",
-        "Assisted in integrating a new insurance provider by extending backend services, aligning data models, and ensuring compatibility with existing provider integrations and business rules.",
-        "Led the end-to-end development of Showcall’s new Webflow website, translating Figma designs into a modern, high-performance interface with custom interactions, CMS-driven content, and smooth scrolling.",
-        "Revamped an outdated website into a refreshed, conversion-focused experience, improving visual clarity, content structure, and overall brand perception.",
+        "Reduced cloud infrastructure costs by 75% by migrating production AI chatbot workloads from AWS EC2 to vast.ai, while automating staging-server shutdowns via AWS Lambda (Python) to cut idle costs further.",
+        "Reduced deployment time by 65% by migrating the production SaaS application from AWS EC2 to Amazon EKS, provisioning Kubernetes clusters, managed node groups, and IAM roles, while enabling rolling deployments and automatic workload scaling.",
+        "Reduced incident detection time from 20–30 minutes to seconds by building a centralized monitoring stack using Grafana, Grafana Alloy, and Prometheus for 20+ servers.",
+        "Architected a multi-cloud (AWS + Azure DevOps) deployment for a video-generation microservice, provisioning 100+ AWS resources via Terraform (including ECS Fargate) with an encrypted remote state backend, and a keyless CI/CD pipeline via OIDC federation with rollback-protected rolling deployments.",
       ],
     },
     {
-      title: "Devops Engineer",
-      company_name: "Virtual Force",
-      icon: virtualforce,
-      iconBg: "#383E56",
-      date: "Mar 2026 - Present",
+      title: "Full Stack Developer",
+      company_name: "Tech Clan",
+      icon: techclanlogo,
+      iconBg: "#E6DEDD",
+      date: "Apr 2025 - Feb 2026",
       points: [
-        "AI Chatbot Deployments — Deployed and migrated AI chatbot workloads across AWS EC2, Lightsail, and vast.ai — evaluating each platform's cost, scalability, and hardware fit before committing. Every deployment is automated through CI/CD pipelines, with an active Lightsail-to-EC2 migration currently in progress.",
-        "AWS EKS Migration (Ameripolish) — Migrated a live floor-polishing SaaS product from EC2 to Elastic Kubernetes Service, handling cluster setup, node groups, IAM configuration, and production workload management on EKS from the ground up.",
-        "Grafana Monitoring Stack — Architected a centralized real-time monitoring solution for Virtual Force's entire server fleet using Grafana, Grafana Alloy, and Prometheus — giving the team live dashboards and proactive alerting across all infrastructure.",
+        "Optimized NestJS backend APIs, improving system efficiency by 25%.",
+        "Integrated a new insurance provider and delivered production-ready Webflow animations within one month.",
       ],
     },
     /*{
@@ -263,4 +263,23 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  const certifications = [
+    {
+      name: "Certified Partner Specialist: Gemini Enterprise Deployment",
+      issuer: "Google Cloud",
+      date: "Oct 2026",
+      icon: googlecloud,
+      badgeColor: "#4285F4",
+      credential_link: "https://www.credly.com/go/GqwAfgnv",
+    },
+    {
+      name: "Certified Partner Specialist: Gemini Enterprise Agent Development",
+      issuer: "Google Cloud",
+      date: "Oct 2026",
+      icon: googlecloud,
+      badgeColor: "#34A853",
+      credential_link: "https://www.credly.com/go/zZuhmPZJ",
+    },
+  ];
+
+  export { services, technologies, experiences, testimonials, projects, certifications };
