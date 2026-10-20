@@ -10,7 +10,7 @@ const Computers = ({ isMobile }) => {
   return (
     <mesh>
       {/* Flat ambient so nothing is ever fully black */}
-      <Environment preset='night' />
+      <Environment preset='night' frames={1} />
       <ambientLight intensity={0.8} />
       <hemisphereLight intensity={0.6} groundColor='#8888aa' />
       {/* Key light — tight beam centred on the setup */}
@@ -62,11 +62,10 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='always'
+      frameloop='demand'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
