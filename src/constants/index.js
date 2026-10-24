@@ -19,7 +19,7 @@ import {
     docker,
     showcallsite,
     settleupsite,
-    tripguide,
+    imgowner,
     threejs,
     //meta,
     //shopify,
@@ -241,25 +241,25 @@ import {
       source_code_link: "https://github.com/Arham1716/Settle-Up",
     },
     {
-      name: "Trip Guide",
+      name: "imgowner",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A container CVE attribution and OS package pin updater. A vulnerability scanner tells you a container has 241 CVEs; imgowner maps every finding back to the layer that introduced it, so you know whether the base image, your Dockerfile, or your app's dependencies brought it in. Ships with a local scan-history dashboard and signed, SBOM-backed releases.",
       tags: [
         {
-          name: "nextjs",
+          name: "Go",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Docker",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Security",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: imgowner,
+      source_code_link: "https://github.com/Arham1716/imgowner",
     },
   ];
   
