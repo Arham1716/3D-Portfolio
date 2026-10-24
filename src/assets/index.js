@@ -37,7 +37,7 @@ import virtualforce from "./company/virtualforce.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import imgowner from "./imgowner.png";
 import settleupsite from "./settleupsite.png";
 import showcallsite from "./showcallsite.png";
 
@@ -71,7 +71,7 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  imgowner,
   techclanlogo,
   settleupsite,
   showcallsite,
