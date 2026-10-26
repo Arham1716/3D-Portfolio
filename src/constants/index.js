@@ -29,6 +29,8 @@ import {
     nextjs,
     postgresql,
     googlecloud,
+    golang,
+    terraform,
     virtualforce
   } from "../assets";
 
@@ -118,6 +120,14 @@ import {
     {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "Go",
+      icon: golang,
+    },
+    {
+      name: "Terraform",
+      icon: terraform,
     },
   ];
   

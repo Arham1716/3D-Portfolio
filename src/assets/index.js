@@ -27,6 +27,8 @@ import nestjs from "./tech/nestjs.png";
 import nextjs from "./tech/nextjs.png";
 import postgresql from "./tech/postgresql.png";
 import googlecloud from "./tech/googlecloud.png";
+import golang from "./tech/go.png";
+import terraform from "./tech/terraform.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -80,5 +82,7 @@ export {
   nextjs,
   postgresql,
   googlecloud,
+  golang,
+  terraform,
   virtualforce
 };
