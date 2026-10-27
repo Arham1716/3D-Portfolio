@@ -1,14 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 
-// Defers mounting children (e.g. a <Canvas>) until the wrapper scrolls near
-// the viewport, so off-screen 3D scenes don't fetch assets or open WebGL
-// contexts at initial page load.
+// Mounts children (e.g. a <Canvas>) only while the wrapper is near the
+// viewport, and unmounts them once it scrolls back out. Each <Canvas> opens
+// its own WebGL context, and browsers cap how many can be alive at once
+// (Chrome silently evicts the oldest past ~16, which renders as a blank
+// canvas with no recovery) — with 15+ skill balls plus the hero computer,
+// Earth and starfield canvases, leaving them all mounted forever is enough
+// to blow past that cap on a single scroll through the page. Keeping only
+// the ones actually in view bounds the count regardless of page length.
 const LazyMount = ({ children, rootMargin = "200px", className, style }) => {
   const ref = useRef(null);
   const [shouldRender, setShouldRender] = useState(false);
 
   useEffect(() => {
-    if (shouldRender) return;
     const node = ref.current;
     if (!node) return;
 
@@ -18,18 +22,13 @@ const LazyMount = ({ children, rootMargin = "200px", className, style }) => {
     }
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldRender(true);
-          observer.disconnect();
-        }
-      },
+      ([entry]) => setShouldRender(entry.isIntersecting),
       { rootMargin }
     );
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [shouldRender, rootMargin]);
+  }, [rootMargin]);
 
   return (
     <div ref={ref} className={className} style={style}>
