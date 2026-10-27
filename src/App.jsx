@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Hero, Navbar, Tech,   //Add Feedback hee and in the return too
   Works, Certifications, StarsCanvas } from './components'
+import { LazyMount } from './hoc'
 
 const App = () => {
   return (
@@ -18,8 +19,9 @@ const App = () => {
       <Certifications />
       <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
-
+        <LazyMount className="w-full h-auto absolute inset-0 z-[-1]" rootMargin="400px">
+          <StarsCanvas />
+        </LazyMount>
       </div>
     </div>
     </BrowserRouter>
